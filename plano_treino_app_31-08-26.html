@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Treino de hoje</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlRyZWlubyBkZSBob2plIiwgInNob3J0X25hbWUiOiAiVHJlaW5vIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNFRUYzRjAiLCAidGhlbWVfY29sb3IiOiAiIzJGNkY2MiIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFFZEVsRVFWUjRuTzNkMjNIVFVCU0dVY0hRRDlRRUJaQlNvQUNvQ1NxQ2g0d240T0ZpU2VlMjlhLzFERVFjN1U5SFRtUm4yd0FBQUFBQUFBQUFMdVBWN0FNNDQrM0g5ejltSHdQUHZuLytXbktXeWh5MFlhK25RaFJMSDZDaHY0NVZZMWp5b0F6K2RhMFd3bElIWS9CenJCTENFZ2RoOEhQTkRtSHFGemY0M013SzRmV01MN3B0aHAvZnpacUg0ZFVaZlA1bjVHNHdkQWN3L0R4aTVKd01DOER3czhlb2VSa1NnT0huaUJGejB6MEF3ODhadmVlbmF3Q0dueFo2emxHM0FBdy9MZldhcHk0QkdINTY2REZYelFNdy9QVFVlcjZhQm1ENEdhSGxuRTE3RkFKVzBDd0FWMzlHYWpWdlRRSXcvTXpRWXU3Y0FoSHRkQUN1L3N4MGR2N3NBRVE3RllDclB5czRNNGQyQUtJZERzRFZuNVVjblVjN0FORU9CZURxejRxT3pLVWRnR2dDSU5ydUFOeitzTEs5ODJrSElKb0FpQ1lBb2dtQWFMc0M4QUtZQ3ZiTXFSMkFhQUlnbWdDSUpnQ2lDWUJvQWlDYUFJZ21BS0lKZ0dnQ0lOcWIyUWR3eHJkUFh3Ny8zWGRQSHhvZXlUVWtydWV1MzhlNnlyTkFaMDdVdmFvbnJxVXJydWVqdjJ1NDNDMVF5NVBWNDkrckpuMDlTd1hRYTNHcm5iUldyR2VoQUhvdmFxV1Qxb0wxZkZZbUFPaWhSQUNqcmlaVnJscG5XYzhYSlFLQVhnUkFOQUVRVFFCRUV3RFJCRUMwMGcvRGJkditaMDhxZkd0dXByVDFMTDBESEhudzZ0M1RoMlVlMkZwTjRucVdEZURzb2xjK2FUMmtybWZKQUZvdGR0V1QxbHJ5ZXBZTUFGb1JBTkVFUURRQkVFMEFSQk1BMFFSQU5BRVFUUUJFRXdEUkJFQTBBUkJOQUVRci80YVlIcXEveWVOZktqNngyWk1kNE02VmgzL2Jydi8vMjBzQVJCTUEwUVJBTkFFUVRRQkVFd0RSQkVBMEFSQk5BRVFUQU5FRVFEUUJFRTBBUkJNQTBRUnc1K3JQeTEvOS83ZVhOOFQ4Z1NISllRY2dtZ0NJSmdDaUNZQm9BaUNhQUlnbUFLSUpnR2dDSUpvQWlDWUFvZ21BYUNVRGFQVUJyejRvOWxueWVwWU1BRm9wRzhEWnEwM0ZxMVZQcWV0Wk5vQnRPN2JvM3o1OUtYdXlla3Rjei9KdmlLbTgrQ3RLVzgvU093Q2NKUUNpQ1lCb0FpQ2FBSWdtQUtLVkNHRFU1L1NrZkI2UTlYeFJJZ0RvcFV3QXZhOG1GYTVXTFZuUFoyVUMyTForaTFybFpMVm1QWXNGc0czdEY3ZlN5ZW9oZlQxZjdmbkRieisrLzlIclFJNDQ4OXhLdFJNMXdwWFc4L3ZucncvTmR1a0E0RzhlRGFEY0xSQzBKQUNpQ1lCb0FpQ2FBSWdtQUtJSmdHZ0NJSm9BaUNZQW91MEs0TkVmTDhOTWUrYlVEa0EwQVJCTkFFUVRBTkYyQitDRk1DdmJPNTkyQUtJSmdHaUhBbkFieElxT3pLVWRnR2lIQTdBTHNKS2o4MmdISU5xcEFPd0NyT0RNSE5vQmlIWTZBTHNBTTUyZFB6c0EwWm9FWUJkZ2hoWnoxMndIRUFFanRabzN0MEJFYXhxQVhZQVJXczVaOHgxQUJQVFVlcjY2M0FLSmdCNTZ6RlczMXdBaW9LVmU4OVQxUmJBSWFLSG5ISFgvTHBBSU9LUDMvQXo1TnFnSU9HTEUzQXo3T1lBSTJHUFV2QXo5UVpnSWVNVElPWmsya0g3bEt2ZG1YQ0NuUFFwaE4rQlhzK1poaVNHMEcrU2FmU0ZjSW9BYkllU1lQZmczU3h6RVBTRmMxeXFEZjdQVXdkd1R3bldzTnZnM1N4N1VuNGlobmxXSC9sZkxIK0MvaUdJZEZZWWRBQUFBQUFBQWdBUS9BY0RCV1Z0c0NWWUxBQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FZQUFBRDBlTlQ2QUFBT1RVbEVRVlI0bk8zYzRYblVTaEtHVWJFUCtVQk1FQUNFWWdJd01abUkyQi9zM211RHNjY3prcnFxdm5NU3NLUnVkYjJyWWUrMkFRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQURBcmQ2dHZnQnErZkRsMDgvVjF3QWM1OGUzNzg1OXRtMFRBSEVNZU9BbEFpR0hoUjdNc0FmMklBcG1zcWlER1BqQUdRVEJEQmF4TVFNZnFFQVE5R1RSbWpIMGdjckVRQjhXcWdGREgraElETlJtY1lveTlJRkp4RUE5RnFRWWd4K1lUQWpVWVNFS01QU0JSR0pnTFE5L0lZTWZRQWlzNHFFdllQQUQvRWtJbk12RFBwSEJEL0E2SVhBT0Qva0VCai9BMndtQlkzbTRCekw0QVc0bkJJN3huOVVYTUpYaEQ3QVA1K2t4Vk5YT2JGU0E0L2dhc0I4UGNpY0dQOEI1aE1EdC9BU3dBOE1mNEZ6TzNkc3BxQnZZZ0FEcitScHdIVjhBcm1UNEE5VGdQTDZPQUxpQ3pRWlFpM1A1N1h3MmVRTWJES0ErUHdsY3hoZUFDeG4rQUQwNHJ5OGpBQzVnTXdIMDR0eCtuYzhrTDdDQkFQcnprOER6ZkFINEM4TWZZQWJuK2ZNRXdETnNGb0Jabk90L0VnQy9zVWtBWm5LK1B5VUFIckU1QUdaenp2OUxBUHlQVFFHUXdYbi9pd0RZYkFhQU5NNTlBV0FUQUlSS1AvK2pBeUI5OFFIU0pjK0IyQUJJWG5RQS9wVTZEeUlESUhXeEFYaGU0bHlJQzRERVJRYmdkV256SVNvQTBoWVhnTGRKbWhNeEFaQzBxQUJjTDJWZVJBUkF5bUlDc0krRXVURStBQklXRVlEOVRaOGZvd05nK3VJQmNLekpjMlIwQUFBQXp4c2JBSk9yRFlEelRKMG5Jd05nNm1JQnNNYkV1VEl1QUNZdUVnRHJUWnN2NHdJQUFIamRxQUNZVm1jQTFESnB6b3dKZ0VtTEFrQmRVK2JOaUFDWXNoZ0E5REJoN293SUFBRGdiZG9Id0lRS0E2Q2Y3dk9uZFFCMGYvZ0E5Tlo1RHJVT0FBRGdPbTBEb0hOMUFUQkgxM25VTmdBQWdPdTFESUN1dFFYQVRCM25VcnNBNlBpUUFaaXYyM3hxRndBQXdPMWFCVUMzdWdJZ1M2YzUxU29BQUlCOXRBbUFUbFVGUUs0dTg2cE5BQUFBKzJrUkFGMXFDZ0MycmNmY2FoRUFBTUMreWdkQWg0b0NnTjlWbjEvbEF3QUEyRi9wQUtoZVR3RHdrc3B6ckhRQUFBREhFQUFBRUtoc0FGVCtiQUlBbDZvNno4b0dBQUJ3bkpJQlVMV1dBT0FhRmVkYXlRQUFBSTRsQUFBZ1VMa0FxUGlaQkFCdVZXMitsUXNBQU9CNEFnQUFBcFVLZ0dxZlJ3QmdUNVhtWEtrQUFBRE9JUUFBSUZDWkFLajBXUVFBamxKbDNwVUpBQURnUEFJQUFBSUpBQUFJVkNJQXF2d2VBZ0JucUREM1NnUUFBSEF1QVFBQWdRUUFBQVJhSGdBVmZnY0JnTE90bm4vTEF3QUFPSjhBQUlCQUFnQUFBZ2tBQUFpME5BQlcvd01JQUZocDVSejBCUUFBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0RRc2dEdzN3QUFnSFh6MEJjQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJOUg3MUJYQytoN3Y3MVpmd3JJOWZQNisrQkRpYzk0OHEzcTM2d3grK2ZQcTU2bThucW5yb3ZNU0J4QlRlUDE3ejQ5djMwK2V4QUJpdTQ4SHpPd2NSWFhuL3VKUUFZRGNURHA3Zk9Zam93dnZIVzYwSUFQOEljS0NKaDgrMnpiMHZacG02VDZmZVZ6SUJNTXowbDNUNi9kSGI5UDA1L2Y3U0NJQkJVbDdPbFB1a2w1UjltWEtmQ1FUQUVHa3ZaZHI5VWx2YWZreTczNmtFd0FDcEwyUHFmVk5MNmo1TXZlOUpCRUJ6NlM5aCt2MnpWdnIrUzcvLzdnUkFZMTYrWHp3SFZyRHZmdkVjK2hJQUFCQklBRFNsdXAveVBEaVQvZmFVNTlHVEFBQ0FRQUtnSWJYOVBNK0ZNOWhuei9OYytoRUFBQkJJQUFCQUlBSFFqTTlzTC9OOE9KTDk5VExQcHhjQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlIZXI3NEE2dmo0OWZNcGYrZmg3djZVdndPZGVQODRtd0RndElQbnViL25NQ0tkOTQ5VkJFQ3dzdytlbDY3QlFVUWE3eCtyK1RjQW9Tb2NQbzlWdXg0NFVyWDlYdTE2T0ljQUNGVDFaYTk2WGJDbnF2dTg2blZ4SEFFUXB2cExYdjM2NEJiVjkzZjE2Mk5mQWlCSWw1ZTd5M1hDVzNUWjExMnVrOXNKQUFBSUpBQkNkS3Y2YnRjTEwrbTJuN3RkTDljUkFBQVFTQUFFNkZyelhhOGJIdXU2ajd0ZU41Y1RBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUjZ2L29DNEdnUGQvZXJMNEdtUG43OXZQb1M0REFDZ0pFTWZmYndlQitKQWFieEV3RGpHUDRjd2I1aUdnRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBSEFPQisvZmw1OUNReGtYekhOKzlVWEFFZDRmRmcvM04wdnZCSTZNL1NaVEFBd25rTWM0RTkrQWdDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBanpjM2ErK2hLdDB2VzU0ck9zKzducmRYRTRBQUVBZ0FRQUFnUVJBaUc2Zjg3cGRMN3lrMjM3dWRyMWNSd0JRanNNSDF2SCs1UkFBUWJ6WXNJNzNqMm9FUUpqcWgxRDE2NE5iVk4vZjFhK1BmUW1BUUZWZjhxclhCWHVxdXMrclhoZkhFUUNoS3Izc0QzZjNwYTRIamxacHYzdi9jZ21BWUJWZS9OVi9IMWJ4L3JIYSs5VVh3SHIvUHdRK2Z2MTg2dDhEdkgrc0l3RDRoNE1CMXZIK2NUWS9BUUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQU5QUHg2K2ZWbDFDYTU4T1I3SytYZVQ2OUNBQUFDQ1FBQUNDUUFHQU1ueDloSGU5ZlB3S2dJUzhhck9QOVl3b0JBQUNCQkVCVC9sZklVNTRIWjdMZm52SThlaElBdE9md2dYVzhmMzBKZ01hOGVMQ085NC91QkVCejZZZFErdjJ6VnZyK1M3Ly83Z1RBQUtrdlllcDlVMHZxUGt5OTcwa0V3QkJwTDJQYS9WSmIybjVNdTkrcEJNQWdLUzlseW4zU1M4cStUTG5QQkFKZ21Pa3Y1L1Q3bzdmcCszUDYvYVY1dCtvUGYvank2ZWVxdjUzZzRlNSs5U1hzeXNGREo5NC8zdXJIdCsrbnoyTUJNTnlFZzhqaFExZmVQeTRsQURoTXQ0UElvY01rM2o5ZUl3QTRSZFhEeUtGREF1OGZ6eEVBQUJCb1JRRDRmd0VBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQ2daUUh3NDl2M2Q2ditOZ0JVc1dvZStnSUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFhR2tBK0c4QkFKQnM1UnowQlFBQUFna0FBQWdrQUFBZ2tBQUFnRURMQThBL0JBUWcwZXI1dHp3QUFJRHpDUUFBQ0NRQUFDQlFpUUJZL1RzSUFKeXB3dHdyRVFBQXdMa0VBQUFFRWdBQUVLaE1BRlQ0UFFRQWpsWmwzcFVKQUFEZ1BBSUFBQUtWQ29BcW4wVUE0QWlWNWx5cEFBQUF6aUVBQUNCUXVRQ285SGtFQVBaU2JiNlZDd0FBNEhnQ0FBQUNsUXlBYXA5SkFPQVdGZWRheVFBQUFJNVZOZ0FxMWhJQXZGWFZlVlkyQUFDQTR3Z0FBQWhVT2dDcWZqWUJnRXRVbm1PbEF3QUFPRWI1QUtoY1R3RHdOOVhuVi9rQUFBRDIxeUlBcWxjVUFEeldZVzYxQ0FBQVlGOXRBcUJEVFFGQWwzblZKZ0FBZ1AyMENvQXVWUVZBcGs1enFsVUFBQUQ3YUJjQW5lb0tnQnpkNWxPN0FOaTJmZzhaZ05rNnpxV1dBUUFBM0tadEFIU3NMUURtNlRxUDJnWUFBSEM5MWdIUXRib0FtS0h6SEdvZEFOdlcrK0VEMEZmMytkTStBQUNBdHhzUkFOMHJESUJlSnN5ZEVRR3diVE1XQTRENnBzeWJNUUd3YlhNV0JZQ2FKczJaVVFFQUFGeG1YQUJNcWpNQTZwZzJYOFlGd0xiTld5UUExcG80VjBZR3dMYk5YQ3dBempkMW5vd05BQURnNzBZSHdOUnFBK0FjaytmSTZBRFl0dG1MQjhCeHBzK1A4UUd3YmZNWEVZQjlKY3lOaUFEWXRvekZCT0IyS2ZNaUpnQzJMV2RSQWJoTzBweUlDb0J0eTFwY0FDNlhOaC9pQW1EYjhoWVpnSmNsem9YSUFOaTJ6TVVHNEUrcDh5QTJBTFl0ZDlFQitDVjVEa1FId0xabEx6NUFzdlR6UHo0QXRzMG1BRWpqM0JjQS83QVpBREk0NzM4UkFJL1lGQUN6T2VmL0pRQitZM01Bek9SOGYwb0FQTU1tQVpqRnVmNG5BZkFYTmd2QURNN3o1M2tvRi9qdzVkUFAxZGNBd05zWS9DL3pCZUFDTmhGQUw4N3Qxd21BQzlsTUFEMDRyeS9qSVYzQlR3SUE5Umo4YitNTHdCVnNNb0Jhbk10dkp3Q3VaTE1CMU9BOHZvNkh0Z00vQ1FDY3orQy9qUzhBTzdBSkFjN2wzTDJkQjdnelh3TUFqbVB3NzhlRFBJZ1FBTmlQd2I4L1B3RWN4R1lGMklmejlCZ2U2Z2w4RFFCNE80UC9XQjd1aVlRQXdPc00vbk40eUFzSUFZQS9HZnpuOHJBWEVnSUFCdjhxSG5vQlFnQklaUEN2NWVFWEl3YUF5UXo5T2l4RVVVSUFtTVRncjhlQ05DQUdnSTRNL2Rvc1RqTmlBS2pNME8vRFFqVW1Cb0FLRFAyZUxOb2dnZ0E0ZzRFL2cwVWNUQkFBZXpEd1o3S29ZVVFCOEJMRFBvZUY1Z21CQUxNWjhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBTUJoL2dzSFJHcDhXNjhScVFBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAEdElEQVR4nO3d23HTUBSGUcHQD9QEBZBSoACoCSqCh4wn4OFiSee29a/1DEQc7U9HTmRn2wAAAAAAAAAALuPV7AM44+3H9z9mHwPPvn/+WnKWyhy0Ya+nQhRLH6Chv45VY1jyoAz+da0WwlIHY/BzrBLCEgdh8HPNDmHqFzf43MwK4fWML7pthp/fzZqH4dUZfP5n5G4wdAcw/Dxi5JwMC8Dws8eoeRkSgOHniBFz0z0Aw88ZveenawCGnxZ6zlG3AAw/LfWapy4BGH566DFXzQMw/PTUer6aBmD4GaHlnE17FAJW0CwAV39GajVvTQIw/MzQYu7cAhHtdACu/sx0dv7sAEQ7FYCrPys4M4d2AKIdDsDVn5UcnUc7ANEOBeDqz4qOzKUdgGgCINruANz+sLK982kHIJoAiCYAogmAaLsC8AKYCvbMqR2AaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCINqb2QdwxrdPXw7/3XdPHxoeyTUkrueu38e6yrNAZ07UvaonrqUrruejv2u43C1Qy5PV49+rJn09SwXQa3GrnbRWrGehAHovaqWT1oL1fFYmAOihRACjriZVrlpnWc8XJQKAXgRANAEQTQBEEwDRBEC00g/Dbdv+Z08qfGtuprT1LL0DHHnw6t3Th2Ue2FpN4nqWDeDsolc+aT2krmfJAFotdtWT1lryepYMAFoRANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQr/4aYHqq/yeNfKj6x2ZMd4M6Vh3/brv//20sARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRw5+rPy1/9/7eXN8T8gSHJYQcgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaCUDaPUBrz4o9lnyepYMAFopG8DZq03Fq1VPqetZNoBtO7bo3z59KXuyektcz/JviKm8+CtKW8/SOwCcJQCiCYBoAiCaAIgmAKKVCGDU5/SkfB6Q9XxRIgDopUwAva8mFa5WLVnPZ2UC2LZ+i1rlZLVmPYsFsG3tF7fSyeohfT1f7fnDbz++/9HrQI4489xKtRM1wpXW8/vnrw/NdukA4G8eDaDcLRC0JACiCYBoAiCaAIgmAKIJgGgCIJoAiCYAou0K4NEfL8NMe+bUDkA0ARBNAEQTANF2B+CFMCvbO592AKIJgGiHAnAbxIqOzKUdgGiHA7ALsJKj82gHINqpAOwCrODMHNoBiHY6ALsAM52dPzsA0ZoEYBdghhZz12wHEAEjtZo3t0BEaxqAXYARWs5Z8x1ABPTUer663AKJgB56zFW31wAioKVe89T1RbAIaKHnHHX/LpAIOKP3/Az5NqgIOGLE3Az7OYAI2GPUvAz9QZgIeMTIOZk2kH7lKvdmXCCnPQphN+BXs+ZhiSG0G+SafSFcIoAbIeSYPfg3SxzEPSFc1yqDf7PUwdwTwnWsNvg3Sx7Un4ihnlWH/lfLH+C/iGIdFYYdAAAAAAAAgAQ/AcDBWVtsCVYLAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAED0lEQVR4nO3d0VHcMBSGUZNJP6QmUgApJRQQagoVkSdm9oEstixZ0q9znpOJ5+rjjsJ6YNsAAAAAAACA9Tz0foAjHp+f3ns/w6reXl6naGXohxTwuEYNfLiHEvF8Rop7iAcRcY7ecXf9x4Wcq1fY33r8o9sm5nS9zvfyryIhr+fKbX3phhbzmq4890u+coTMh9bbuvmGFjO3WvfQNGgx85mWXTQLWszc06qPJkGLmT1adFI9aDFzRO1eqgYtZkrU7KZa0GLmjFr9dPvoG1qoErTtTA01OjodtJip6WxPrhxEORW07UwLZ7oqDlrMtFTalysHUYqCtp25QklnNjRRBE2Uw0G7bnClo73Z0EQRNFEOBe26QQ9HurOhiSJoogiaKLuDdn+mp7392dBEETRRBE0UQRNF0EQRNFEETRRBE0XQRBE0Ub73foAj/v7+U/x3f/z6WfFJ5rPK7Hb/Apfe73KcOZBbMx1OLSmz2/MLh4YPutZh3Op9MFdJm92eoJe8Q7c46FWMPruhg245vNEP5qxVZzds0FcMbeSDOWPl2Q0bNJQQNFEETRRBE0XQRBE0UQRNlKleTvpw9OPXUb9n2kP67Kbb0CXvEqzy7sZXVpjdVEGfGe5sB1PbKrObJugaQ53pYGpaaXbTBA17CJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJMuX70DXN9r4v99nQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEETRRBE0XQRBE0UZZ/fXSWn9l2xMqvxNrQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEETRRBE2WaoGu8cLPqSzsrzW6aoLft3FBnOZBWVpndVEFvW9lwZzqQllaY3ZTvQ8825JGkz266DQ33CJoogiaKoIkiaKIImijDBn3FjxdI/BEG27b27IYNGkoMHXTLLTDqhqll1dkNHfS2tRneyAdS04qzGz7obas7xNEPpLbVZvew9w8+Pj+9t3yQPc68hzDDYbSUMLu3l9cve50qaNa2J+gprhywl6CJImiiCJoogiaKoIkiaKIImiiCJoqgibI76D0fO0Ire/uzoYkiaKIImiiHgnaPpocj3dnQRBE0UQ4H7drBlY72ZkMTRdBEKQratYMrlHRmQxOlOGhbmpZK+zq1oUVNC2e6cuUgyumgbWlqOttTlQ0tamqo0ZErB1GqBW1Lc0atfqpuaFFTomY31a8couaI2r00uUOLmj1adNLsP4Wi5p5WfTT9Loeo+UzLLpp/207U3Grdw6Wx+T0t67pqsV36wYptvaYrz71bYLZ1vh4LrNtH37Z1tl7nO0RUtnWO3otqiKBviXs+vSO+NcyDfEbc4xop4ltDPtT/CLyfUQMGAAAAAACg0D8SfjxUGdlraAAAAABJRU5ErkJggg==">
+<meta name="theme-color" content="#2F6F62">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Treino">
+
+<style>
+:root{
+  --bg: #EEF3F0;
+  --surface: #FFFFFF;
+  --ink: #1F2E2B;
+  --ink-soft: #5C6E69;
+  --line: #DCE4DF;
+  --pine: #2F6F62;
+  --pine-dark: #1F4D43;
+  --pine-tint: #E3EFEB;
+  --amber: #B8763D;
+  --amber-tint: #F7EBDD;
+  --clay: #A6472F;
+  --clay-tint: #F5E4DF;
+  --done: #C7DED6;
+}
+*{ box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+html,body{ margin:0; padding:0; }
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding-bottom: 70px;
+}
+.wrap{ max-width: 560px; margin: 0 auto; padding: 0 14px; }
+
+/* Sticky top: day picker + session name */
+.top-bar{
+  position: sticky; top: 0; z-index: 20;
+  background: var(--bg);
+  padding: 14px 14px 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.top-bar .day-select{
+  display:flex; gap:6px; overflow-x:auto; padding-bottom: 8px;
+}
+.day-btn{
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.86rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.day-btn.active{
+  background: var(--pine);
+  color: #fff;
+  border-color: var(--pine);
+}
+.session-line{
+  display:flex; align-items:baseline; justify-content:space-between;
+  padding: 2px 2px 0 2px;
+}
+.session-line h1{
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.session-line .progress{
+  font-size: 0.82rem;
+  color: var(--pine-dark);
+  font-weight: 600;
+}
+
+/* Safety strip - compact, expandable */
+.safety-strip{
+  margin: 12px 0;
+  background: var(--clay-tint);
+  border: 1px solid #E3C4B9;
+  border-left: 4px solid var(--clay);
+  border-radius: 10px;
+  overflow:hidden;
+}
+.safety-strip summary{
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--clay);
+  cursor: pointer;
+  list-style: none;
+}
+.safety-strip summary::-webkit-details-marker{ display:none; }
+.safety-strip[open] summary{ border-bottom: 1px dashed #E3C4B9; }
+.safety-strip .body{ padding: 10px 14px 14px 14px; font-size: 0.85rem; }
+.safety-strip ul{ margin: 4px 0 0 0; padding-left: 18px; }
+.safety-strip li{ margin-bottom: 6px; }
+.safety-strip .urgent{ margin-top:10px; font-weight:600; font-size:0.82rem; }
+
+/* Exercise card - everything visible at a glance */
+.ex-card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin-bottom: 12px;
+  padding: 14px;
+  transition: background .2s;
+}
+.ex-card.done{ background: var(--pine-tint); }
+.ex-top{ display:flex; gap:12px; align-items:flex-start; }
+.icon-box{
+  flex: 0 0 auto; width: 44px; height: 44px;
+  background: var(--pine-tint);
+  border-radius: 10px;
+  display:flex; align-items:center; justify-content:center;
+}
+.icon-box svg{ width:28px; height:28px; }
+.ex-name{ font-weight: 700; font-size: 1rem; line-height:1.25; }
+.ex-focus{ font-size: 0.78rem; color: var(--pine-dark); margin-top:2px; }
+
+.metrics-row{
+  display:flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;
+}
+.metric-pill{
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-align:center;
+  min-width: 56px;
+}
+.metric-pill .v{ font-weight:700; font-size: 0.92rem; }
+.metric-pill .k{ font-size: 0.66rem; color: var(--ink-soft); }
+
+.sets-row{
+  display:flex; align-items:center; gap:8px; margin-top: 12px; flex-wrap: wrap;
+}
+.sets-row .lbl{ font-size:0.76rem; color: var(--ink-soft); font-weight:600; margin-right:2px; }
+.set-box{
+  width: 30px; height: 30px;
+  border: 2px solid var(--pine);
+  border-radius: 8px;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 0.82rem; font-weight:700;
+  color: var(--pine);
+  background: #fff;
+  user-select:none;
+}
+.set-box.checked{
+  background: var(--pine);
+  color: #fff;
+}
+
+.exec-toggle{
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  border-top: 1px dashed var(--line);
+  padding-top: 8px;
+  cursor: pointer;
+  display:flex; align-items:center; gap:5px;
+}
+.exec-toggle .arrow{ transition: transform .2s; }
+.ex-card.open .exec-toggle .arrow{ transform: rotate(180deg); }
+.exec-body{ display:none; margin-top: 8px; font-size: 0.87rem; }
+.ex-card.open .exec-body{ display:block; }
+.exec-body .caution{
+  margin-top: 8px;
+  background: var(--amber-tint);
+  border-left: 3px solid var(--amber);
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 0.83rem;
+  color: #7A521F;
+}
+
+footer.note{
+  margin-top: 20px;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  padding: 0 2px;
+}
+
+#splash{
+  position: fixed; inset: 0; z-index: 999;
+  background: var(--pine);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap: 14px;
+  transition: opacity .4s ease;
+}
+#splash img{ width: 84px; height: 84px; border-radius: 20px; }
+#splash .app-name{
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+#splash.hide{ opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="splash">
+  <img id="splashIcon" src="" alt="Treino">
+  <div class="app-name">Treino de hoje</div>
+</div>
+<div class="top-bar">
+  <div class="day-select" id="dayTabs"></div>
+  <div class="session-line">
+    <h1 id="sessionTitle"></h1>
+    <span class="progress" id="progressLabel"></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <details class="safety-strip">
+    <summary>Cuidados com a lombar — toque para ver</summary>
+    <div class="body">
+      <ul>
+        <li><strong>Regra da dor:</strong> se a dor irradiada aumentar, descer mais para o pé, ou surgir dormência/formigamento/fraqueza nova, pare ou troque o exercício.</li>
+        <li><strong>RPE 5–6 é o teto:</strong> termine a série sentindo que ainda daria 4–5 repetições a mais. Nunca ir à falha.</li>
+        <li><strong>Progrida repetições/tempo antes da carga</strong>, e só se os sintomas estiverem estáveis.</li>
+      </ul>
+      <div class="urgent">Fraqueza progressiva, dormência íntima/períneo ou alteração para urinar/evacuar: atendimento imediato.</div>
+    </div>
+  </details>
+
+  <div id="exList"></div>
+
+  <footer class="note">Toque nos quadrados para marcar as séries feitas. Toque em "como executar" para ver a técnica e os cuidados de cada exercício.</footer>
+</div>
+
+<script>
+const SYMBOLS = `
+<svg width="0" height="0" style="position:absolute">
+<defs>
+<symbol id="fig-front" viewBox="0 0 40 40">
+  <circle cx="20" cy="7" r="5" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+  <path d="M12 16 Q20 12 28 16 L27 26 Q20 29 13 26 Z" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+  <path d="M12 17 L6 27" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M28 17 L34 27" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M15 27 L13 38" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M25 27 L27 38" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+</symbol>
+<symbol id="fig-back" viewBox="0 0 40 40">
+  <circle cx="20" cy="7" r="5" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+  <path d="M12 16 Q20 12 28 16 L27 26 Q20 29 13 26 Z" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+  <line x1="20" y1="15" x2="20" y2="26" stroke="#1F2E2B" stroke-width="1.2"/>
+  <path d="M12 17 L6 27" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M28 17 L34 27" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M15 27 L13 38" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M25 27 L27 38" fill="none" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>`;
+document.body.insertAdjacentHTML('afterbegin', SYMBOLS);
+
+const HL = "#2F6F62";
+function iconFront(h){ return `<svg viewBox="0 0 40 40"><use href="#fig-front"/>${h}</svg>`; }
+function iconBack(h){ return `<svg viewBox="0 0 40 40"><use href="#fig-back"/>${h}</svg>`; }
+
+const ICONS = {
+  aquecimento: `<svg viewBox="0 0 40 40">
+      <circle cx="10" cy="30" r="5" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+      <circle cx="30" cy="30" r="5" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+      <path d="M10 30 L18 16 L26 16 L30 30" fill="none" stroke="${HL}" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M18 16 L14 22 L22 24" fill="none" stroke="${HL}" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="19" cy="10" r="3" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+    </svg>`,
+  peito: iconFront(`<path d="M13 17 Q20 15 27 17 L26 23 Q20 25 14 23 Z" fill="${HL}" opacity="0.55"/>`),
+  costas: iconBack(`<path d="M13 17 Q20 15 27 17 L27 25 Q20 28 13 25 Z" fill="${HL}" opacity="0.55"/>`),
+  ombros: iconFront(`<ellipse cx="13" cy="17" rx="3" ry="3" fill="${HL}" opacity="0.7"/><ellipse cx="27" cy="17" rx="3" ry="3" fill="${HL}" opacity="0.7"/>`),
+  ombrosPost: iconBack(`<ellipse cx="13" cy="17" rx="3" ry="3" fill="${HL}" opacity="0.7"/><ellipse cx="27" cy="17" rx="3" ry="3" fill="${HL}" opacity="0.7"/>`),
+  biceps: iconFront(`<rect x="9" y="18" width="4" height="8" rx="2" fill="${HL}" opacity="0.7"/><rect x="27" y="18" width="4" height="8" rx="2" fill="${HL}" opacity="0.7"/>`),
+  triceps: iconBack(`<rect x="9" y="18" width="4" height="8" rx="2" fill="${HL}" opacity="0.7"/><rect x="27" y="18" width="4" height="8" rx="2" fill="${HL}" opacity="0.7"/>`),
+  quadriceps: iconFront(`<rect x="14" y="27" width="4" height="9" rx="2" fill="${HL}" opacity="0.7"/><rect x="22" y="27" width="4" height="9" rx="2" fill="${HL}" opacity="0.7"/>`),
+  posterior: iconBack(`<rect x="14" y="27" width="4" height="9" rx="2" fill="${HL}" opacity="0.7"/><rect x="22" y="27" width="4" height="9" rx="2" fill="${HL}" opacity="0.7"/>`),
+  quadril: iconFront(`<ellipse cx="20" cy="26" rx="9" ry="3.4" fill="${HL}" opacity="0.55"/>`),
+  gluteos: iconBack(`<ellipse cx="20" cy="26" rx="9" ry="3.4" fill="${HL}" opacity="0.55"/>`),
+  core: `<svg viewBox="0 0 40 40">
+      <use href="#fig-front"/>
+      <path d="M13 20 Q20 17 27 20" fill="none" stroke="${HL}" stroke-width="2" stroke-linecap="round"/>
+    </svg>`,
+  cardio: `<svg viewBox="0 0 40 40">
+      <path d="M20 30 C10 22 6 16 11 11 C15 7 20 10 20 15 C20 10 25 7 29 11 C34 16 30 22 20 30 Z" fill="none" stroke="${HL}" stroke-width="1.8"/>
+    </svg>`,
+  mobilidade: `<svg viewBox="0 0 40 40">
+      <circle cx="20" cy="8" r="4" fill="none" stroke="#1F2E2B" stroke-width="1.6"/>
+      <path d="M20 12 L20 24" stroke="#1F2E2B" stroke-width="1.6"/>
+      <path d="M20 15 Q10 15 8 24" fill="none" stroke="${HL}" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M20 15 Q30 20 27 30" fill="none" stroke="${HL}" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M20 24 L14 34" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M20 24 L24 34" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>`,
+};
+
+const EXPL = {
+  "Bicicleta reclinada": { icon: ICONS.aquecimento,
+    exec: "Sentado, encosto reclinado apoiando toda a lombar, pés nos pedais alinhados aos joelhos. Pedale em ritmo confortável, sem forçar a coluna para frente.",
+    cuidado: "O encosto reclinado sustenta a lombar e evita a flexão da coluna." },
+  "Bicicleta reclinada ou elíptico": { icon: ICONS.cardio,
+    exec: "Escolha o aparelho mais confortável no dia. Na bike reclinada, encosto apoiando a lombar; no elíptico, tronco ereto, sem inclinar para frente.",
+    cuidado: "Ajuste a intensidade para manter respiração controlada durante toda a duração." },
+  "Chest Press máquina": { icon: ICONS.peito,
+    exec: "Costas totalmente apoiadas, empurre os punhos à frente até quase estender os cotovelos, sem travá-los, e retorne controlando.",
+    cuidado: "Ombros não devem subir em direção às orelhas durante o movimento." },
+  "Remada máquina peito apoiado": { icon: ICONS.costas,
+    exec: "Peito apoiado no encosto inclinado, puxe as alças em direção ao abdômen aproximando as escápulas, retorne devagar.",
+    cuidado: "Mantenha o peito encostado o tempo todo, sem levantar o tronco na puxada." },
+  "Puxada frontal": { icon: ICONS.costas,
+    exec: "Sentado, pegada um pouco mais aberta que os ombros, puxe a barra até a altura do queixo/peito levando os cotovelos para baixo.",
+    cuidado: "Não incline o tronco para trás para 'ajudar' — isso sobrecarrega a lombar." },
+  "Elevação lateral sentada": { icon: ICONS.ombros,
+    exec: "Sentado com apoio nas costas, eleve os braços lateralmente até a altura dos ombros e desça controlando.",
+    cuidado: "O apoio sentado impede o corpo de balançar para gerar impulso." },
+  "Rosca bíceps sentada apoiada": { icon: ICONS.biceps,
+    exec: "Braço apoiado, flexione o cotovelo trazendo o peso em direção ao ombro, sem tirar o cotovelo do apoio.",
+    cuidado: "O apoio do braço protege a lombar de compensações." },
+  "Tríceps pulley corda": { icon: ICONS.triceps,
+    exec: "Em pé, cotovelos fixos ao lado do corpo, estenda os braços empurrando a corda para baixo.",
+    cuidado: "Mantenha o abdômen ativado, sem curvar a lombar para trás." },
+  "Pallof press": { icon: ICONS.core,
+    exec: "Em pé, cabo na altura do peito, empurre à frente sem deixar o tronco girar em direção ao aparelho.",
+    cuidado: "É anti-rotação: o objetivo é resistir ao giro do tronco, com a pelve neutra." },
+  "Cadeira extensora": { icon: ICONS.quadriceps,
+    exec: "Costas apoiadas, estenda os joelhos elevando o rolo até quase a extensão completa, desça controlando.",
+    cuidado: "Encoste totalmente as costas no banco durante todo o movimento." },
+  "Mesa flexora sentada": { icon: ICONS.posterior,
+    exec: "Sentado com apoio, flexione os joelhos puxando o rolo para baixo/trás, retorne devagar.",
+    cuidado: "Ajuste o encosto para a lombar não arquear durante a flexão." },
+  "Mesa flexora deitada": { icon: ICONS.posterior,
+    exec: "Deitado de bruços, flexione os joelhos trazendo o rolo aos glúteos, sem levantar o quadril do banco.",
+    cuidado: "Mantenha o quadril pressionado no banco o tempo todo." },
+  "Abdução de quadril máquina": { icon: ICONS.quadril,
+    exec: "Costas apoiadas, afaste as pernas contra a resistência e retorne controlando.",
+    cuidado: "Evite inclinar o tronco para os lados durante o movimento." },
+  "Adução de quadril máquina": { icon: ICONS.quadril,
+    exec: "Costas apoiadas, aproxime as pernas contra a resistência e retorne controlando.",
+    cuidado: "Mantenha a coluna encostada no banco o tempo todo." },
+  "Leg press 45°": { icon: ICONS.quadriceps,
+    exec: "Pés na largura dos ombros, desça até um ângulo confortável sem a lombar descolar do banco, empurre sem travar os joelhos.",
+    cuidado: "Só faça se o exercício equivalente do dia anterior foi bem tolerado; pare a descida antes da lombar arredondar." },
+  "Bird-dog": { icon: ICONS.core,
+    exec: "Em quatro apoios, estenda um braço e a perna oposta mantendo a coluna neutra. Alterne os lados.",
+    cuidado: "Movimento lento — se a lombar arquear ou o quadril girar, reduza a amplitude." },
+  "Mobilidade leve de quadril": { icon: ICONS.mobilidade,
+    exec: "Circundução e balanço suave do quadril em amplitude confortável, sem forçar o limite da dor.",
+    cuidado: "É mobilidade leve — pare bem antes de qualquer desconforto." },
+  "Supino máquina com encosto": { icon: ICONS.peito,
+    exec: "Costas totalmente apoiadas, empurre os punhos à frente/cima até quase estender os cotovelos.",
+    cuidado: "Regule o assento para não precisar arquear a lombar para alcançar a pegada." },
+  "Remada sentada com apoio": { icon: ICONS.costas,
+    exec: "Tronco fixo, puxe as alças em direção ao abdômen aproximando as escápulas.",
+    cuidado: "Evite balançar o tronco para trás para ganhar impulso." },
+  "Pullover máquina": { icon: ICONS.costas,
+    exec: "Costas apoiadas, leve os braços de cima para baixo/frente, sentindo o alongamento das costas.",
+    cuidado: "Mantenha a lombar encostada no banco durante todo o percurso." },
+  "Crucifixo inverso máquina": { icon: ICONS.ombrosPost,
+    exec: "Peito apoiado, abra os braços lateralmente para trás aproximando as escápulas.",
+    cuidado: "Sem o apoio do peito, o tronco tende a compensar com a lombar." },
+  "Desenvolvimento máquina com encosto": { icon: ICONS.ombros,
+    exec: "Costas totalmente apoiadas, empurre os punhos para cima até quase estender os cotovelos.",
+    cuidado: "O encosto deve sustentar a lombar — evite arquear para completar a repetição." },
+  "Rosca máquina": { icon: ICONS.biceps,
+    exec: "Braços apoiados, flexione os cotovelos trazendo o peso em direção ao ombro.",
+    cuidado: "O apoio fixo dos braços protege a lombar." },
+  "Tríceps máquina": { icon: ICONS.triceps,
+    exec: "Tronco apoiado, estenda os cotovelos empurrando contra a resistência.",
+    cuidado: "Mantenha o tronco encostado no apoio durante todo o movimento." },
+  "Elevação pélvica no chão": { icon: ICONS.gluteos,
+    exec: "Deitado, joelhos flexionados, eleve o quadril contraindo os glúteos até a linha reta ombros-joelhos.",
+    cuidado: "Só faça se for confortável. Evite hiperestender a lombar — a extensão vem do quadril." },
+};
+
+function focusIcon(focus){
+  const f = focus.toLowerCase();
+  if(f.includes("aqueciment")) return ICONS.aquecimento;
+  if(f.includes("emagreciment") || f.includes("recuperaç")) return ICONS.cardio;
+  if(f.includes("mobilidade")) return ICONS.mobilidade;
+  if(f.includes("core") || f.includes("estabilidade") || f.includes("lombar")) return ICONS.core;
+  if(f.includes("peito")) return ICONS.peito;
+  if(f.includes("costas")) return ICONS.costas;
+  if(f.includes("ombro") && f.includes("post")) return ICONS.ombrosPost;
+  if(f.includes("ombro")) return ICONS.ombros;
+  if(f.includes("bícep")) return ICONS.biceps;
+  if(f.includes("trícep")) return ICONS.triceps;
+  if(f.includes("quadríceps/glúteo")) return ICONS.quadriceps;
+  if(f.includes("quadríceps")) return ICONS.quadriceps;
+  if(f.includes("posterior")) return ICONS.posterior;
+  if(f.includes("glúteo")) return ICONS.gluteos;
+  if(f.includes("quadril")) return ICONS.quadril;
+  return ICONS.core;
+}
+
+const DAYS = [
+  { key:"SEG", label:"Seg", session:"Superior A", items:[
+    ["Bicicleta reclinada","1","8–10 min","—","3–4","Aquecimento"],
+    ["Chest Press máquina","3","10–12","60–90 s","5–6","Peito"],
+    ["Remada máquina peito apoiado","3","10–12","60–90 s","5–6","Costas/postura"],
+    ["Puxada frontal","2–3","10–12","60–90 s","5–6","Costas"],
+    ["Elevação lateral sentada","2","12–15","60 s","5","Ombros/postura"],
+    ["Rosca bíceps sentada apoiada","2","10–15","60 s","5","Bíceps"],
+    ["Tríceps pulley corda","2","10–15","60 s","5","Tríceps"],
+    ["Pallof press","2","8–12/cada","45–60 s","4–5","Core/estabilidade"],
+  ]},
+  { key:"TER", label:"Ter", session:"Inferior A", items:[
+    ["Bicicleta reclinada","1","8–10 min","—","3–4","Aquecimento"],
+    ["Cadeira extensora","3","12–15","60 s","4–5","Quadríceps"],
+    ["Mesa flexora sentada","3","12–15","60–90 s","4–5","Posterior"],
+    ["Abdução de quadril máquina","2–3","12–15","60 s","4–5","Quadril/glúteos"],
+    ["Adução de quadril máquina","2","12–15","60 s","4–5","Quadril"],
+    ["Leg press 45°","2","10–12","90 s","4–5","Quadríceps/glúteos — somente se tolerado"],
+    ["Bird-dog","2","6–8/cada","45–60 s","3–4","Core/postura"],
+  ]},
+  { key:"QUA", label:"Qua", session:"Cardio + postura", items:[
+    ["Bicicleta reclinada ou elíptico","1","20–30 min","—","3–5","Emagrecimento"],
+    ["Pallof press","2","8–12/cada","45–60 s","4","Core"],
+    ["Bird-dog","2","6–8/cada","45–60 s","3–4","Estabilidade lombar"],
+    ["Mobilidade leve de quadril","1","5–8 min","—","2–3","Mobilidade"],
+  ]},
+  { key:"QUI", label:"Qui", session:"Superior B", items:[
+    ["Bicicleta reclinada","1","8–10 min","—","3–4","Aquecimento"],
+    ["Supino máquina com encosto","3","10–12","60–90 s","5–6","Peito"],
+    ["Remada sentada com apoio","3","10–12","60–90 s","5–6","Costas/postura"],
+    ["Pullover máquina","2","10–12","60–90 s","5","Costas"],
+    ["Crucifixo inverso máquina","2","12–15","60 s","5","Postura/ombros"],
+    ["Desenvolvimento máquina com encosto","2","10–12","60–90 s","5","Ombros"],
+    ["Rosca máquina","2","10–15","60 s","5","Bíceps"],
+    ["Tríceps máquina","2","10–15","60 s","5","Tríceps"],
+  ]},
+  { key:"SEX", label:"Sex", session:"Inferior B", items:[
+    ["Bicicleta reclinada","1","8–10 min","—","3–4","Aquecimento"],
+    ["Cadeira extensora","2–3","12–15","60 s","5","Quadríceps"],
+    ["Mesa flexora deitada","2–3","12–15","60–90 s","4–5","Posterior"],
+    ["Abdução de quadril máquina","2–3","12–15","60 s","4–5","Quadril/glúteos"],
+    ["Elevação pélvica no chão","2","10–15","60 s","3–5","Glúteos — somente se confortável"],
+    ["Leg press 45°","2","10–12","90 s","4–5","Somente se terça foi bem tolerada"],
+    ["Pallof press","2","8–12/cada","45–60 s","4–5","Core"],
+  ]},
+  { key:"SAB", label:"Sáb", session:"Cardio + recuperação", items:[
+    ["Bicicleta reclinada ou elíptico","1","25–35 min","—","3–5","Emagrecimento"],
+    ["Bird-dog","2","6–8/cada","45–60 s","3–4","Postura/core"],
+    ["Pallof press","2","8–12/cada","45–60 s","4","Estabilidade"],
+    ["Mobilidade leve de quadril","1","5–8 min","—","2–3","Recuperação"],
+  ]},
+];
+
+function maxSets(series){
+  const nums = series.match(/\d+/g);
+  if(!nums) return 1;
+  return Math.max(...nums.map(Number));
+}
+
+const dayTabsEl = document.getElementById('dayTabs');
+const exListEl = document.getElementById('exList');
+const sessionTitleEl = document.getElementById('sessionTitle');
+const progressLabelEl = document.getElementById('progressLabel');
+
+// figure out today's weekday to pre-select
+const weekdayMap = [null, 0, 1, 2, 3, 4, 5]; // Sun=null, Mon=SEG(0)...Sat=SAB(5)
+const jsDay = new Date().getDay();
+let currentIdx = weekdayMap[jsDay];
+if(currentIdx === null) currentIdx = 0;
+
+DAYS.forEach((day, idx) => {
+  const btn = document.createElement('button');
+  btn.className = 'day-btn' + (idx===currentIdx ? ' active' : '');
+  btn.textContent = day.label;
+  btn.onclick = () => renderDay(idx);
+  dayTabsEl.appendChild(btn);
+});
+
+function updateProgress(){
+  const total = document.querySelectorAll('.set-box').length;
+  const checked = document.querySelectorAll('.set-box.checked').length;
+  progressLabelEl.textContent = total ? `${checked}/${total} séries` : '';
+}
+
+function renderDay(idx){
+  currentIdx = idx;
+  document.querySelectorAll('.day-btn').forEach((b,i)=> b.classList.toggle('active', i===idx));
+  const day = DAYS[idx];
+  sessionTitleEl.textContent = day.session;
+  exListEl.innerHTML = '';
+
+  day.items.forEach((it) => {
+    const [name, series, reps, rest, rpe, focus] = it;
+    const info = EXPL[name] || { icon: focusIcon(focus), exec: "Execute de forma controlada, priorizando técnica sobre carga.", cuidado: "" };
+    const icon = info.icon || focusIcon(focus);
+    const nSets = maxSets(series);
+
+    const card = document.createElement('div');
+    card.className = 'ex-card';
+
+    let boxes = '';
+    for(let i=0;i<nSets;i++){
+      boxes += `<div class="set-box" data-i="${i}">${i+1}</div>`;
+    }
+
+    card.innerHTML = `
+      <div class="ex-top">
+        <div class="icon-box">${icon}</div>
+        <div>
+          <div class="ex-name">${name}</div>
+          <div class="ex-focus">${focus}</div>
+        </div>
+      </div>
+      <div class="metrics-row">
+        <div class="metric-pill"><div class="v">${series}</div><div class="k">séries</div></div>
+        <div class="metric-pill"><div class="v">${reps}</div><div class="k">reps</div></div>
+        <div class="metric-pill"><div class="v">${rest}</div><div class="k">descanso</div></div>
+        <div class="metric-pill"><div class="v">${rpe}</div><div class="k">RPE</div></div>
+      </div>
+      <div class="sets-row">
+        <span class="lbl">Séries feitas:</span>
+        ${boxes}
+      </div>
+      <div class="exec-toggle"><span class="arrow">▾</span> Como executar</div>
+      <div class="exec-body">
+        <p style="margin:0;">${info.exec}</p>
+        ${info.cuidado ? `<div class="caution">${info.cuidado}</div>` : ""}
+      </div>
+    `;
+
+    card.querySelectorAll('.set-box').forEach(box => {
+      box.addEventListener('click', () => {
+        box.classList.toggle('checked');
+        const allChecked = card.querySelectorAll('.set-box').length === card.querySelectorAll('.set-box.checked').length;
+        card.classList.toggle('done', allChecked);
+        updateProgress();
+      });
+    });
+    card.querySelector('.exec-toggle').addEventListener('click', () => {
+      card.classList.toggle('open');
+    });
+
+    exListEl.appendChild(card);
+  });
+
+  updateProgress();
+}
+
+renderDay(currentIdx);
+
+// Splash screen: só mostra quando aberto como app (tela inicial), não numa aba normal do navegador
+(function() {
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  const splash = document.getElementById('splash');
+  const splashIcon = document.getElementById('splashIcon');
+  splashIcon.src = "data:image/png;base64,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";
+  if (isStandalone) {
+    setTimeout(() => { splash.classList.add('hide'); }, 900);
+    setTimeout(() => { splash.remove(); }, 1400);
+  } else {
+    splash.remove();
+  }
+})();
+</script>
+</body>
+</html>
